@@ -1,3 +1,5 @@
+var h = window.innerHeight;
+
 // Navbar Sticking
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -5,10 +7,10 @@ $(document).ready(function () {
     //.log to determine when you want the
     //nav bar to stick.
     console.log($(window).scrollTop());
-    if ($(window).scrollTop() > 760) {
+    if ($(window).scrollTop() > h - 40) {
       $("#main-nav").addClass("navbar-fixed");
     }
-    if ($(window).scrollTop() < 761) {
+    if ($(window).scrollTop() < h - 41) {
       $("#main-nav").removeClass("navbar-fixed");
     }
   });
