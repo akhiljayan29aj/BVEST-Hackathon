@@ -125,7 +125,7 @@ img {
 }
 
 #banner .banner-img {
-  background: url("../img/pexels-kevin-ku-577585.jpg") no-repeat center center/cover;
+  background: url("../img/banner.png") no-repeat center center/cover;
   height: 60vh;
 }
 
@@ -164,7 +164,7 @@ img {
   background: #fff;
   border-radius: 10px;
   width: 70%;
-  margin: -33px auto;
+  margin: -42.42px auto;
   z-index: 100;
 }
 
@@ -190,7 +190,7 @@ img {
 }
 
 #main-nav .logo {
-  width: 180px;
+  width: 50px;
 }
 
 #main-nav ul {
@@ -718,6 +718,10 @@ img {
 
 #footer .container a {
   color: #fff;
+}
+
+#footer .container .logo {
+  width: 50px;
 }
 
 @media screen and (max-width: 1500px) {
