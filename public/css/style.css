@@ -322,6 +322,7 @@ img {
 #themes .card {
   position: relative;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 #themes .card .face {
@@ -579,7 +580,7 @@ img {
 }
 
 #faq .collapsible {
-  font-family: "Courier Prime", monospace;
+  font-family: "Raleway", sans-serif;
   background-color: #e8ffff;
   color: #333;
   cursor: pointer;
@@ -724,7 +725,27 @@ img {
   width: 50px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px) and (min-width: 601px) {
+  .social {
+    display: none;
+  }
+  #main-nav .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr auto 3fr;
+        grid-template-columns: 1fr auto 3fr;
+    padding: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #themes .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
   #main-nav .social {
     display: none;
   }
