@@ -164,7 +164,7 @@ img {
   background: #fff;
   border-radius: 10px;
   width: 70%;
-  margin: -42.42px auto;
+  margin: -45.62px auto;
   z-index: 100;
 }
 
@@ -407,6 +407,7 @@ img {
 #themes .card .face.face2 .content p {
   margin: 0;
   padding: 0;
+  font-size: 0.9rem;
 }
 
 #themes .card .face.face2 .content a {
@@ -567,7 +568,7 @@ img {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   max-width: 1400px;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
   padding: 1rem 0 4rem;
 }
 
