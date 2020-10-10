@@ -9,7 +9,7 @@
 
 /* Base Styling */
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
 }
 
@@ -581,7 +581,7 @@ img {
 }
 
 #faq .collapsible {
-  font-family: "Raleway", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #e8ffff;
   color: #333;
   cursor: pointer;
