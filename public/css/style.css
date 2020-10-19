@@ -153,8 +153,9 @@ img {
 
 #banner .call-to-action .l-heading {
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
+  margin-bottom: -.5rem;
 }
 
 #main-nav {
@@ -197,8 +198,8 @@ img {
       justify-self: end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[6];
-      grid-template-columns: repeat(6, auto);
+  -ms-grid-columns: (auto)[7];
+      grid-template-columns: repeat(7, auto);
 }
 
 #main-nav ul li a {
@@ -237,6 +238,61 @@ img {
 
 #main-nav .social a:hover #instagram {
   color: #d6249f;
+}
+
+#intro {
+  padding: 6rem 0 3rem;
+  min-height: 200px;
+  background: #a6f6f1;
+}
+
+#intro .container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1300px;
+  grid-gap: 3rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#intro .container .clg .sect-head {
+  font-size: 4.5rem;
+}
+
+#intro .container .clg p {
+  font-size: 1.3rem;
+}
+
+#intro .container .clg .p1 {
+  margin-top: -1rem;
+}
+
+#intro .container .clg .p2 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+#intro .container .clg .p3, #intro .container .clg .p4 {
+  font-size: 1.6rem;
+}
+
+#intro .container .clg .p4 {
+  margin-bottom: 1rem;
+}
+
+#intro .container .logo-div .clg-logo {
+  width: 240px;
+}
+
+#intro .container .logo-div .intro-logo {
+  width: 400px;
 }
 
 #home {
@@ -773,7 +829,7 @@ img {
 }
 
 #footer .container .logo {
-  width: 50px;
+  width: 80px;
 }
 
 @media screen and (max-width: 1500px) and (min-width: 601px) {
@@ -864,6 +920,45 @@ img {
   #banner .call-to-action .container .lastDate {
     margin-left: 0;
   }
+  #intro .container {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #intro .container .clg {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #intro .container .clg .sect-head {
+    font-size: 3rem;
+  }
+  #intro .container .clg p {
+    font-size: 1rem;
+  }
+  #intro .container .clg .p1 {
+    margin-top: -1rem;
+  }
+  #intro .container .clg .p2 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  #intro .container .clg .p3, #intro .container .clg .p4 {
+    font-size: 1.4rem;
+  }
+  #intro .container .clg .p4 {
+    margin-bottom: 1rem;
+  }
+  #intro .container .logo-div {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #intro .container .logo-div .intro-logo {
+    display: none;
+  }
   #home .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -875,9 +970,6 @@ img {
   #themes .card .face.face1 {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-  #themes .card:hover .face.face1 {
-    background: #74bef0;
   }
   #themes .card .face.face1 .content {
     opacity: 1;
@@ -904,7 +996,7 @@ img {
   #timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #74bef0 transparent transparent;
+    border-color: transparent #0085b5 transparent transparent;
   }
   #faq .question-grid {
     -ms-grid-columns: 1fr;
