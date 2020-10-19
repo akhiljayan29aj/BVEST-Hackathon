@@ -1,6 +1,6 @@
 /*                Variables               */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ img {
 
 .btn-apply {
   color: #000;
-  background: #3282b8;
+  background: #0085b5;
   padding: 0.7rem;
   width: 80%;
 }
@@ -90,11 +90,10 @@ img {
 }
 
 .sect-head {
-  font-family: "Courier Prime", monospace;
+  font-family: 'Cairo', sans-serif;
   font-size: 3.5rem;
   text-align: center;
   padding: 3rem 0 0 0;
-  font-style: italic;
 }
 
 .bottom-line-white {
@@ -122,7 +121,7 @@ img {
 #banner {
   background-color: #1b262c;
   width: 100%;
-  height: 105vh;
+  height: 110vh;
   overflow: hidden;
 }
 
@@ -132,7 +131,7 @@ img {
 }
 
 #banner .call-to-action .container {
-  height: 40vh;
+  height: 50vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -149,8 +148,6 @@ img {
 }
 
 #banner .call-to-action .lastDate {
-  margin-left: 5.8rem;
-  margin-top: 0.1rem;
   color: aliceblue;
 }
 
@@ -279,8 +276,8 @@ img {
 
 #about {
   min-height: 200px;
-  background: #3282b8;
-  color: #e8ffff;
+  background: #74bef0;
+  color: #000;
   padding-bottom: 5rem;
 }
 
@@ -352,9 +349,60 @@ img {
 }
 
 #themes .card:hover .face.face1 {
-  background: #3282b8;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+#themes .card1:hover .face.face1 {
+  background: #fd294d;
+}
+
+#themes .card2:hover .face.face1 {
+  background: #f5ae49;
+}
+
+#themes .card3:hover .face.face1 {
+  background: #00a655;
+}
+
+#themes .card4:hover .face.face1 {
+  background: #f40d3a;
+}
+
+#themes .card5:hover .face.face1 {
+  background: #ff4a41;
+}
+
+#themes .card6:hover .face.face1 {
+  background: #ffbb3d;
+}
+
+#themes .card7:hover .face.face1 {
+  background: #c5144a;
+}
+
+#themes .card8:hover .face.face1 {
+  background: #ff6e41;
+}
+
+#themes .card9:hover .face.face1 {
+  background: #fc1a74;
+}
+
+#themes .card10:hover .face.face1 {
+  background: #eb9429;
+}
+
+#themes .card11:hover .face.face1 {
+  background: #d6913d;
+}
+
+#themes .card12:hover .face.face1 {
+  background: #00814e;
+}
+
+#themes .card13:hover .face.face1 {
+  background: #004e6d;
 }
 
 #themes .card .face.face1 .content {
@@ -491,7 +539,7 @@ img {
   bottom: 0;
   width: 400px;
   padding: 1rem;
-  background: #3282b8;
+  background: #0085b5;
   border-radius: 8px;
 }
 
@@ -530,13 +578,13 @@ img {
 #timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #3282b8 transparent transparent;
+  border-color: transparent #0085b5 transparent transparent;
 }
 
 #timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #3282b8;
+  border-color: transparent transparent transparent #0085b5;
 }
 
 #sponsors {
@@ -599,7 +647,7 @@ img {
 
 #faq .active,
 #faq .collapsible:hover {
-  border-color: #3282b8;
+  border-color: #74bef0;
 }
 
 #faq .collapsible:after {
@@ -621,9 +669,9 @@ img {
   -webkit-transition: max-height 0.1s ease-out, padding 0.1s linear, opacity 0.1s ease-in;
   transition: max-height 0.1s ease-out, padding 0.1s linear, opacity 0.1s ease-in;
   background-color: #e8ffff;
-  border-bottom: 3px solid #3282b8;
-  border-left: 3px solid #3282b8;
-  border-right: 3px solid #3282b8;
+  border-bottom: 3px solid #74bef0;
+  border-left: 3px solid #74bef0;
+  border-right: 3px solid #74bef0;
   font-size: 1.1rem;
   color: #1b262c;
 }
@@ -826,7 +874,7 @@ img {
             transform: translateY(0);
   }
   #themes .card:hover .face.face1 {
-    background: #3282b8;
+    background: #74bef0;
   }
   #themes .card .face.face1 .content {
     opacity: 1;
@@ -853,7 +901,7 @@ img {
   #timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #3282b8 transparent transparent;
+    border-color: transparent #74bef0 transparent transparent;
   }
   #faq .question-grid {
     -ms-grid-columns: 1fr;
