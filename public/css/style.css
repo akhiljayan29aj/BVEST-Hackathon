@@ -296,6 +296,9 @@ img {
 
 #intro .container .logo-div .clg-logo {
   width: 240px;
+  background-color: #bbe1fa;
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
 }
 
 #intro .container .logo-div .intro-logo {
