@@ -164,7 +164,7 @@ img {
   background: #fff;
   border-radius: 10px;
   width: 70%;
-  margin: -45.62px auto;
+  margin: -48.2px auto;
   z-index: 100;
 }
 
@@ -173,7 +173,7 @@ img {
   display: grid;
   -ms-grid-columns: 2fr 3fr auto 6fr;
       grid-template-columns: 2fr 3fr auto 6fr;
-  padding: 1rem;
+  padding: 0 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -190,7 +190,7 @@ img {
 }
 
 #main-nav .logo {
-  width: 50px;
+  width: 90px;
 }
 
 #main-nav ul {
@@ -241,9 +241,9 @@ img {
 }
 
 #intro {
-  padding: 6rem 0 3rem;
+  padding: 6rem 0 6rem;
   min-height: 200px;
-  background: #a6f6f1;
+  background: #74bef0;
 }
 
 #intro .container {
@@ -284,7 +284,7 @@ img {
 }
 
 #intro .container .clg .p4 {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 #intro .container .logo-div .clg-logo {
@@ -292,7 +292,8 @@ img {
 }
 
 #intro .container .logo-div .intro-logo {
-  width: 400px;
+  margin-top: 2rem;
+  width: 450px;
 }
 
 #home {
