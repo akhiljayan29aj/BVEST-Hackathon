@@ -53,6 +53,13 @@ img {
   width: 80%;
 }
 
+.btn-rule {
+  color: #fff;
+  background: #0f4c75;
+  padding: 0.7rem;
+  width: 80%;
+}
+
 .btn:hover {
   opacity: 0.9;
 }
@@ -348,6 +355,12 @@ img {
 
 #about ul li p {
   padding-left: 1rem;
+}
+
+#about .rulebook {
+  display: none;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 #themes {
@@ -857,6 +870,9 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+  .sect-head {
+    font-size: 2.7rem;
+  }
   #main-nav .social {
     display: none;
   }
@@ -912,6 +928,9 @@ img {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
   }
+  #banner .banner-img {
+    height: 55vh;
+  }
   #banner .call-to-action .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -958,11 +977,34 @@ img {
             order: 1;
   }
   #intro .container .logo-div .intro-logo {
-    display: none;
+    width: 250px;
+    margin-bottom: -1rem;
   }
   #home .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  #home .container p {
+    font-size: 1rem;
+  }
+  #about p {
+    font-size: 1rem;
+  }
+  #about ul li {
+    margin-bottom: 1rem;
+  }
+  #about ul li div {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  #about ul li p {
+    padding-left: 1rem;
+  }
+  #about .rules {
+    display: none;
+  }
+  #about .rulebook {
+    display: block;
   }
   #themes .container {
     -ms-grid-columns: 1fr;
@@ -999,16 +1041,45 @@ img {
     border-width: 8px 16px 8px 0;
     border-color: transparent #0085b5 transparent transparent;
   }
+  #sponsors {
+    min-height: 200px;
+    background: #41aea9;
+    padding-bottom: 3rem;
+  }
+  #sponsors .sub-head {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+  }
+  #sponsors p {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
   #faq .question-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  #contact p {
+    font-size: 1.4rem;
+  }
   #contact #mail {
     display: block;
   }
   #contact #mailid {
+    display: none;
+  }
+  #footer div {
+    text-align: center;
+  }
+  #footer .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #footer .dept {
     display: none;
   }
 }
