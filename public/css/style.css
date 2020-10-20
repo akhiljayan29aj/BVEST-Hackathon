@@ -675,6 +675,37 @@ img {
   margin-bottom: 0.5rem;
 }
 
+#sponsors .sponsor-grid {
+  padding: 2rem 1rem;
+  min-height: 200px;
+  border-radius: 25px;
+  background: #e8ffff;
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 2rem;
+}
+
+#sponsors .sponsor-grid img {
+  width: 300px;
+  height: 300px;
+}
+
+#sponsors .sponsor-grid .sponsor-title {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 #faq {
   min-height: 200px;
   background: #0f4c75;
@@ -1059,6 +1090,14 @@ img {
     line-height: 1.2;
     font-size: 1rem;
     margin-bottom: 0.5rem;
+  }
+  #sponsors .sponsor-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #sponsors .sponsor-grid img {
+    width: 250px;
+    height: 250px;
   }
   #faq .question-grid {
     -ms-grid-columns: 1fr;
