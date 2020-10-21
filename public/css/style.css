@@ -826,6 +826,7 @@ img {
   border-bottom: 3px solid #74bef0;
   border-left: 3px solid #74bef0;
   border-right: 3px solid #74bef0;
+  opacity: 0;
   font-size: 1.1rem;
   color: #1b262c;
 }
