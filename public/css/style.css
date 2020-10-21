@@ -1145,13 +1145,28 @@ img {
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
-  #sponsors .sponsor-grid {
+  #sponsors .sponsor-grid-back .sponsor-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  #sponsors .sponsor-grid img {
+  #sponsors .sponsor-grid-back .sponsor-grid .sponsor {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  #sponsors .sponsor-grid-back .sponsor-grid .sponsor img {
     width: 250px;
-    height: 250px;
+  }
+  #sponsors .sponsor-grid-back .last-sponsor {
+    margin-top: 2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #sponsors .sponsor-grid-back .last-sponsor .sponsor {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  #sponsors .sponsor-grid-back .last-sponsor .sponsor img {
+    width: 250px;
   }
   #faq .question-grid {
     -ms-grid-columns: 1fr;
