@@ -10,7 +10,7 @@
 
 /* Base Styling */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
 
@@ -97,7 +97,7 @@ img {
 }
 
 .sect-head {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 3.5rem;
   text-align: center;
   padding: 3rem 0 0 0;
@@ -163,7 +163,7 @@ img {
   color: #fff;
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: -.5rem;
+  margin-bottom: -0.5rem;
 }
 
 #main-nav {
@@ -287,7 +287,8 @@ img {
   font-size: 1.4rem;
 }
 
-#intro .container .clg .p3, #intro .container .clg .p4 {
+#intro .container .clg .p3,
+#intro .container .clg .p4 {
   font-size: 1.6rem;
 }
 
@@ -723,6 +724,7 @@ img {
 }
 
 #sponsors .sponsor-grid-back .last-sponsor {
+  margin: 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[1];
@@ -785,7 +787,7 @@ img {
 }
 
 #faq .collapsible {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #e8ffff;
   color: #333;
   cursor: pointer;
@@ -1054,7 +1056,8 @@ img {
     margin: 1rem 0;
     font-size: 1.2rem;
   }
-  #intro .container .clg .p3, #intro .container .clg .p4 {
+  #intro .container .clg .p3,
+  #intro .container .clg .p4 {
     font-size: 1.4rem;
   }
   #intro .container .clg .p4 {
