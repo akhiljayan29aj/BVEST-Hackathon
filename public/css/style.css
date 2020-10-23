@@ -727,8 +727,8 @@ img {
   margin: 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[1];
-      grid-template-columns: repeat(1, auto);
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
