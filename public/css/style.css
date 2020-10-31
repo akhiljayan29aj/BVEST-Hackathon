@@ -53,6 +53,14 @@ img {
   width: 80%;
 }
 
+.btn-closed {
+  color: #ddd;
+  background: #3b3737;
+  padding: 0.7rem;
+  width: 80%;
+  border: 3px #ddd solid;
+}
+
 .btn-rule {
   color: #fff;
   background: #0f4c75;
@@ -62,6 +70,10 @@ img {
 
 .btn:hover {
   opacity: 0.9;
+}
+
+.btn-closed:hover {
+  opacity: 1;
 }
 
 .py-1 {
