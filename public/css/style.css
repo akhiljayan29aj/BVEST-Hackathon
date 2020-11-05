@@ -1,6 +1,7 @@
 /*                Variables               */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:900");
 * {
   margin: 0;
   padding: 0;
@@ -280,6 +281,12 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+#intro .container .btn-apply {
+  width: 60%;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 #intro .container .clg .sect-head {
@@ -567,6 +574,150 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#result {
+  background: #0f4c75;
+  padding-bottom: 2rem;
+}
+
+#result .winp {
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  margin: 1rem 0;
+}
+
+#result .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#result img {
+  margin: 2.5rem 0;
+  width: 150px;
+}
+
+@media (max-width: 767px) {
+  #result .winp {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  #result .container {
+    -ms-grid-columns: (auto)[1];
+        grid-template-columns: repeat(1, auto);
+  }
+}
+
+#result .winner-card {
+  background: #e8ffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  height: 300px;
+  margin: 20px;
+  padding: 0 20px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.025);
+  text-align: center;
+  -webkit-transition: height 650ms;
+  transition: height 650ms;
+  width: 260px;
+}
+
+@media (max-width: 767px) {
+  #result .winner-card {
+    left: calc(50% - 20px);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+#result .winner-card.expanded {
+  height: 325px;
+}
+
+#result .label {
+  margin-top: 30px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: -webkit-transform 650ms;
+  transition: -webkit-transform 650ms;
+  transition: transform 650ms;
+  transition: transform 650ms, -webkit-transform 650ms;
+}
+
+#result .winner-card.expanded .label {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#result .text2 {
+  clip-path: polygon(0% 100%, 0% -80%, 15% -70%, 17.23% -53.59%, 23% -40%, 27.23% -28.94%, 35% -20%, 41.09% -13.59%, 50% -10%, 58.91% -13.23%, 65% -20%, 72.77% -28.23%, 77% -40%, 82.77% -54.65%, 85% -70%, 100% -80%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0% -80%, 15% -70%, 17.23% -53.59%, 23% -40%, 27.23% -28.94%, 35% -20%, 41.09% -13.59%, 50% -10%, 58.91% -13.23%, 65% -20%, 72.77% -28.23%, 77% -40%, 82.77% -54.65%, 85% -70%, 100% -80%, 100% 100%);
+  -webkit-transition: -webkit-clip-path 650ms;
+  transition: -webkit-clip-path 650ms;
+  transition: clip-path 650ms;
+  transition: clip-path 650ms, -webkit-clip-path 650ms;
+}
+
+#result .winner-card.expanded .text2 {
+  clip-path: polygon(0% 100%, 0% -90%, 15% -80%, 17.23% -63.59%, 23% -50%, 27.23% -38.94%, 35% -30%, 41.09% -23.59%, 50% -20%, 58.91% -23.23%, 65% -30%, 72.77% -38.23%, 77% -50%, 82.77% -64.65%, 85% -80%, 100% -90%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0% -90%, 15% -80%, 17.23% -63.59%, 23% -50%, 27.23% -38.94%, 35% -30%, 41.09% -23.59%, 50% -20%, 58.91% -23.23%, 65% -30%, 72.77% -38.23%, 77% -50%, 82.77% -64.65%, 85% -80%, 100% -90%, 100% 100%);
+}
+
+#result .text-content {
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+  -webkit-transition: -webkit-transform 650ms;
+  transition: -webkit-transform 650ms;
+  transition: transform 650ms;
+  transition: transform 650ms, -webkit-transform 650ms;
+}
+
+#result .winner-card.expanded .text-content {
+  -webkit-transform: translateY(-13px);
+          transform: translateY(-13px);
+}
+
+#result .chevron {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 15px);
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 650ms;
+  transition: -webkit-transform 650ms;
+  transition: transform 650ms;
+  transition: transform 650ms, -webkit-transform 650ms;
+}
+
+#result .winner-card.expanded .chevron {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+#result .title {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 900;
+  margin: 20px 0 12px;
+  font-size: 1.3rem;
+}
+
+#result .body-text {
+  padding: 0 20px;
 }
 
 #timeline {
